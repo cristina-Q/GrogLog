@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <>
       <nav>
-        <h1>Grog Blog</h1>
+        <h1>Grog Log</h1>
         <div>
           <Link href="/">
             <a>Blog</a>
