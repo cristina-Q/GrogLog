@@ -4,29 +4,37 @@ export default function Header() {
   return (
     <>
       <nav>
-        <h1>Grog Log</h1>
-        <div>
-          <Link href="/">
-            <a>Blog</a>
-          </Link>
-          <Link href="/">
-            <a>About</a>
-          </Link>
+        <div className="nav-wrapper">
+          <h1>Grog Log</h1>
+          <div>
+            <Link href="/">
+              <a>Blog</a>
+            </Link>
+            <Link href="/">
+              <a>About</a>
+            </Link>
+          </div>
         </div>
       </nav>
 
       <style jsx>{`
         nav {
-          background: #444;
-          width: auto;
-          padding: 0 2rem;
+          background: #5f658b;
+          width: 100%;
+        }
+        .nav-wrapper {
           display: flex;
           justify-content: space-between;
           align-items: center;
           font-size: 1rem;
         }
+
+        h1 {
+          margin-left: 8rem;
+        }
         nav a {
-          margin-right: 1rem;
+          font-size: 23px;
+          margin-right: 8rem;
           text-decoration: none;
         }
         nav a:hover {
