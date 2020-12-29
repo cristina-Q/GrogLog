@@ -6,9 +6,7 @@ export default function Header() {
       <nav>
         <div className="nav-wrapper">
           <Link href="/">
-            <h1>
-              <a>ಠ_ಠ&nbsp;&nbsp;Grog&nbsp;Log</a>
-            </h1>
+            <a className="logo">ಠ_ಠ&nbsp;&nbsp;Grog&nbsp;Log</a>
           </Link>
 
           <div>
@@ -28,29 +26,25 @@ export default function Header() {
         }
 
         .nav-wrapper {
+          height: 300px;
+          background: url('/img/drinks300.png') no-repeat center center;
           padding-top: 30px;
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           align-items: center;
           font-size: 1rem;
         }
 
-        .nav-wrapper h1 {
-          font-family: 'Exo 2';
-          font-weight: normal;
-          font-style: normal;
-          margin-left: 8rem;
-          letter-spacing: 1px;
-          cursor: pointer;
-        }
         nav a {
           font-family: 'Exo 2';
           font-weight: 500;
           font-style: normal;
           font-size: 25px;
-          margin-right: 8rem;
           text-decoration: none;
-          padding: 7px;
+          padding: 13px;
+          margin-left: 7px;
+          color: #fff;
+          background-color: #000;
         }
         nav a:hover {
           color: #fff;
