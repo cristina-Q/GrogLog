@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const HeadPost = ({ meta, isBlogPost }) => (
   <div>
     <h1 className={isBlogPost ? 'great-title' : null}>{meta.title}</h1>
@@ -9,6 +11,8 @@ export const HeadPost = ({ meta, isBlogPost }) => (
         ☕ {meta.readTime + ' min read'}
       </span>
     </div>
+
+    <img src={meta.imgsrc} alt={meta.imgalt} title={meta.imgtitle} width="100%"></img>
 
     <style jsx>
       {`

@@ -14,7 +14,6 @@ export default function Layout({ children, pageTitle, description }) {
       <style jsx global>{`
         html,
         body {
-          text-align: center;
           margin: 0;
           padding: 0;
           font-family: 'Exo 2';
