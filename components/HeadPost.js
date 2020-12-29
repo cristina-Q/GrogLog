@@ -9,7 +9,6 @@ export const HeadPost = ({ meta, isBlogPost }) => (
         ☕ {meta.readTime + ' min read'}
       </span>
     </div>
-
     <img src={meta.imgsrc} alt={meta.imgalt} title={meta.imgtitle} width="100%"></img>
 
     <style jsx>

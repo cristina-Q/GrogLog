@@ -8,11 +8,25 @@ export const Post = ({ post }) => {
   } = post;
 
   return (
-    <article>
-      <HeadPost meta={meta} />
-      <Link href={'/blog' + link}>
-        <a>Read more →</a>
-      </Link>
-    </article>
+    <div>
+      <article>
+        <HeadPost meta={meta} />
+
+        <Link href={'/blog' + link}>
+          <a>Read more →</a>
+        </Link>
+      </article>
+
+      <style jsx>
+        {`
+          a {
+            margin-top: 50px;
+            padding: 7px;
+            color: #fff;
+            background-color: #000;
+          }
+        `}
+      </style>
+    </div>
   );
 };
