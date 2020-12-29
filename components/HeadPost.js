@@ -1,8 +1,6 @@
-import Image from 'next/image';
-
 export const HeadPost = ({ meta, isBlogPost }) => (
   <>
-    <Image src={meta.imgsrc} alt={meta.imgalt} title={meta.imgtitle} width={900} height={600}></Image>
+    <img src={meta.imgsrc} alt={meta.imgalt} title={meta.imgtitle} width={900} height={600}></img>
     <h1 className={isBlogPost ? 'great-title' : null}>{meta.title}</h1>
     <div className="details">
       {isBlogPost ? null : <h2>{meta.description}</h2>}
