@@ -10,18 +10,19 @@ export default function Layout({ children, pageTitle, description }) {
         <meta name="Description" content={description}></meta>
         <title>{pageTitle}</title>
       </Head>
+
       <style jsx global>{`
         html,
         body {
           text-align: center;
           margin: 0;
           padding: 0;
-          font-family: 'Ubuntu';
-          font-weight: 300;
+          font-family: 'Exo 2';
+          font-weight: normal;
           font-style: normal;
-          background: #1e1e1e;
-          color: #fff;
-          font-size: 1rem;
+          background: #f0f0f0;
+          color: #000;
+          font-size: 1.2rem;
         }
         h1,
         h2,
@@ -29,12 +30,12 @@ export default function Layout({ children, pageTitle, description }) {
         h4,
         h5,
         h6 {
-          font-family: 'Ubuntu';
-          font-weight: bold;
+          font-family: 'Exo 2';
+          font-weight: normal;
           font-style: normal;
         }
         a {
-          color: #fff;
+          color: #000;
         }
         .content {
           max-width: 1000px;
@@ -42,6 +43,7 @@ export default function Layout({ children, pageTitle, description }) {
           padding: 1rem 1rem;
         }
       `}</style>
+
       <main>
         <Header />
         <div className="content">{children}</div>

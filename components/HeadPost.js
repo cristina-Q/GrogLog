@@ -1,7 +1,7 @@
 export const HeadPost = ({ meta, isBlogPost }) => (
-  <>
-    <img src={meta.imgsrc} alt={meta.imgalt} title={meta.imgtitle} width={900} height={600}></img>
+  <div>
     <h1 className={isBlogPost ? 'great-title' : null}>{meta.title}</h1>
+
     <div className="details">
       {isBlogPost ? null : <h2>{meta.description}</h2>}
       <span>{meta.date}</span>
@@ -9,6 +9,7 @@ export const HeadPost = ({ meta, isBlogPost }) => (
         ☕ {meta.readTime + ' min read'}
       </span>
     </div>
+    <img src={meta.imgsrc} alt={meta.imgalt} title={meta.imgtitle} width={900} height={600}></img>
 
     <style jsx>
       {`
@@ -16,13 +17,13 @@ export const HeadPost = ({ meta, isBlogPost }) => (
           font-size: 3rem;
           font-weight: 700;
           letter-spacing: 0.88px;
-          color: #c0b3f9;
+          color: #333333;
         }
         .great-title {
           font-size: 2rem;
         }
         .details span {
-          color: #bdbdbd;
+          color: #333333;
           margin-right: 1rem;
         }
         .details {
@@ -30,5 +31,5 @@ export const HeadPost = ({ meta, isBlogPost }) => (
         }
       `}
     </style>
-  </>
+  </div>
 );

@@ -1,6 +1,7 @@
 import { HeadPost } from './HeadPost';
 
-//receives the post to show and its meta object
+//receives the post to show
+//receives the post meta object
 //render a single article
 
 export default function BlogPost({ children, meta }) {
