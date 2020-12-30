@@ -12,16 +12,21 @@ export const Post = ({ post }) => {
       <article>
         <HeadPost meta={meta} />
 
-        <Link href={'/blog' + link}>
-          <a>Read more →</a>
-        </Link>
+        <div className="footer-post">
+          <Link href={'/blog' + link}>
+            <a>Read more →</a>
+          </Link>
+        </div>
       </article>
 
       <style jsx>
         {`
-          a {
-            margin-top: 50px;
-            padding: 7px;
+          .footer-post {
+            display: block;
+            margin-top: 20px;
+          }
+          .footer-post a {
+            padding: 9px;
             color: #fff;
             background-color: #000;
           }

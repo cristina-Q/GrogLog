@@ -1,7 +1,7 @@
 import BlogPost from '../../../components/BlogPost';
 
 export const meta = {
-  title: 'Get the Geth',
+  title: 'Get the Geth - Ethereum client node',
   description: 'Install and run Geth on Windows 10',
   date: 'Dec 21, 2020',
   readTime: 4,
@@ -14,51 +14,106 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 ## Geth on Windows 10 (part 1)
 
-This very first post of GrogLog blog will be focused solely in: "how to install Geth on a Windows 10 Machine."
+This very first post of GrogLog blog will be focused solely in: <mark>how to install Geth on a Windows 10 Machine</mark>.
 More from Geth with real examples in the next post.
 
-To run or not to run an Ethereum client/node and more than that on a W10 PC comes down to a personal choice and we will not get into the rabbit hole and start to: "why or why not to.."
+> > > _[To run or not to run](https://www.litcharts.com/blog/shakespeare/hamletssoliloquy 'shakespeare/hamletssoliloquy')_ an Ethereum client/node
+> > > and more than that on a W10 PC.
+
+That comes down to a personal choice and we will not get into the rabbit hole and start to: why or why not to...
 Before to start let's have a bit of a context in regard to this option.
 
-According to Etherscan at the moment of posting, Geth client is a way to go for 72% of all Ethereum Node operators.
-Windows on the other hand count for only 3.8% of all ETH nodes. In the same time on this rock, W10 has a market share of 64.2%.
+According to _[Etherscan](https://etherscan.io/nodetracker)_ at the moment of posting, **Geth client** is a way to go for **72% of all Ethereum Node operators**.
 
-The thinker
-Go Ethereum (Geth) is one of the three original implementations (along with C++ and Python) of the Ethereum protocol and one of the five available now. Read about all 5 implementations of Ethereum clients/nodes and what each has to offer on Ethereum official website.
+### Windows hand count for only 3.8% of all ETH nodes.
 
-Ethereum clients/nodes
-Installing Geth
-We cannot emphasize enough how crucial is to use ONLY the official sources and the most recent version of a software when comes to cryptocurrency. The internet is full of cases in which people not cautious enough lost all their crypto due to the fact that they had used outdated (with known vulnerabilities) or faked software.
+In the same time on this _[rock](https://en.wikipedia.org/wiki/Earth#/media/File:The_Earth_seen_from_Apollo_17.jpg)_, W10 has a market share of 64.2%.
+
+⛓
+
+⛓
+
+**Go Ethereum (Geth)** is one of the three original implementations (along with C++ and Python) of the Ethereum protocol and one of the five available now.
+
+🧾 Read about all 5 implementations of Ethereum clients/nodes and what each has to offer on _[Ethereum](https://ethereum.org/en/developers/docs/nodes-and-clients/#clients)_ official website.
+
+![Ethereum clients](/img/ethereum_clients.png 'Ethereum clients')
+
+<sub>Ethereum clients/nodes</sub>
+
+## Installing Geth
+
+We cannot emphasize enough how crucial is to use <mark>ONLY the official sources and the most recent version</mark> of a software when comes to cryptocurrency.
+
+The internet is full of cases in which people not cautious enough lost all their crypto due to the fact that they had used outdated (with known vulnerabilities) or faked software.
 
 Download the latest stable release of Go Ethereum (Geth) from the page bellow: Go to "Downloads" section of the site.
+_Official subdomain of Geth can be found at: **https://geth.ethereum.org/**_.
 
-Download Geth 1 Download Geth 2
-Official subdomain of Geth can be found at: https://geth.ethereum.org/. For those who want to see, fork, and maybe contribute, the open source Github repository of Go-Ethereum is on this page: https://github.com/ethereum/go-ethereum
+![](/img/download_geth_1.png 'Download ethereum')
+
+<sub>Download Geth 1 Download Geth 2</sub>
 
 Once the file has been downloaded, just run it (double LMB or RMB followed by Open) since it's a .exe file.
 
-Geth .exe
-The installation is pretty straight forward. Development tools are not selected by default. For an enhanced experience with Geth, it's a must to have it but is not a requirement.
+![](/img/download_geth_2.png 'Download ethereum')
 
-Development tools
-Before starting Geth, let's have a look at where in the PC blockchain data and Keystore files are to be found. The path is: "C:\Users\Bob\AppData\Local\Ethereum", where "Bob" is your user in Windows 10. By default, the AppData folder is hidden in Windows and will not be visible in Explorer. To make it show up we have to instruct Windows Explorer first.
+> > > For those who want to see, fork and maybe contribute, **the open source Github repository of Go-Ethereum** is on this page: https://github.com/ethereum/go-ethereum
 
-AppDAta
-Starting Geth
-Sync modes
+The installation is pretty straight forward.
+
+Development tools are not selected by default. For an enhanced experience with Geth, it's a must to have it but is not a requirement.
+
+![](/img/development_tools.png 'Download ethereum')
+
+<sub>Development tools</sub>
+
+Before starting Geth, let's have a look at where _blockchain data_ and _Keystore_ files are to be found.
+
+The path is: "C:\Users\Bob\AppData\Local\Ethereum", where "Bob" is your user in Windows 10.
+
+By default, the AppData folder is hidden in Windows and will not be visible in Explorer. To make it show up we have to instruct Windows Explorer first.
+
+![](/img/app_data.jpg 'Download ethereum')
+
+<sub>AppDAta</sub>
+
+## Starting Geth
+
+# Sync modes
+
 You can start Geth in one of three different sync modes using the --syncmode "mode" argument that determines what sort of node it is in the network.
 
 These are:
 
-Full: Downloads all blocks (including headers, transactions, and receipts) and generates the state of the blockchain incrementally by executing every block.
-Fast (Default): Downloads all blocks (including headers, transactions and receipts), verifies all headers, and downloads the state and verifies it against the headers.
-Light: Downloads all block headers, block data, and verifies some randomly.
-A
-To start Geth in Default mode (will need over 300 GB to sync with Ethereum network), in cmd must be entered the command:
+1.<mark>Full:</mark>
+Downloads all blocks (including headers, transactions, and receipts) and generates the state of the blockchain incrementally
+by executing every block.
 
-geth
-Geth running
-Be aware that starting the node in Full mode will download well over 5TB (yes with a "T") of data to get in sync. The Light mode will need less than 1GB. Either way one of these commands will get the job done:
+2.<mark>Fast</mark> (Default): Downloads all blocks (including headers, transactions and receipts), verifies all headers, and
+downloads the state and verifies it against the headers.
 
+3.<mark>Light:</mark> Downloads all block headers, block data, and verifies some randomly.
+
+⛓
+
+> To start Geth in Default mode
+> (will need over 300 GB to sync with Ethereum network), in cmd must be entered the command: _`geth`_
+
+![Geth Running](/img/geth_running.png 'Geth Running')
+
+<sub>Geth running</sub>
+
+Be aware that starting the node in Full mode will download well over 5TB (yes with a "T") of data to get in sync.
+
+> > > > > > The _Light mode_ will need <mark>less than 1GB</mark>.
+
+Either way one of these commands will get the job done:
+
+```jsx
 geth --syncmode "full"
+```
+
+```jsx
 geth --syncmode "light"
+```
