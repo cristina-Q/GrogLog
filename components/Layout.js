@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Footer from './Footer';
 import Header from './Header';
 
 export default function Layout({ children, pageTitle, description }) {
@@ -10,6 +11,12 @@ export default function Layout({ children, pageTitle, description }) {
         <meta name="Description" content={description}></meta>
         <title>{pageTitle}</title>
       </Head>
+
+      <main>
+        <Header />
+        <div className="content">{children}</div>
+        <Footer />
+      </main>
 
       <style jsx global>{`
         html,
@@ -42,11 +49,6 @@ export default function Layout({ children, pageTitle, description }) {
           padding: 1rem 1rem;
         }
       `}</style>
-
-      <main>
-        <Header />
-        <div className="content">{children}</div>
-      </main>
     </>
   );
 }
