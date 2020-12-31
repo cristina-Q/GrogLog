@@ -66,7 +66,7 @@ export const meta = {
         <img width={"60%"} src="/img/development_tools.png" title="Development tools" alt="Development tools"/>
 
         <p className={styles.aligntext}>
-          Before starting Geth, let's have a look at where in the PC blockchain data and Keystore files are to be found. The path is: "C:\Users\Bob\AppData\Local\Ethereum", where "Bob" is your user in Windows 10. By default, the AppData folder is hidden in Windows and will not be visible in Explorer. To make it show up we have to instruct Windows Explorer first.
+          Before starting Geth, let's have a look at where in the PC blockchain data and Keystore files are to be found. The path is: "C:\Users\Bob\AppData \Local\Ethereum", where "Bob" is your user in Windows 10. By default, the AppData folder is hidden in Windows and will not be visible in Explorer. To make it show up we have to instruct Windows Explorer first.
         </p>
 
         <img width={"100%"} src="/img/app_data.jpg" title="AppDAta" alt="AppDAta"></img>
@@ -94,10 +94,11 @@ export const meta = {
         </ul>
 
         <p className={styles.aligntext}>To start Geth in Default mode (will need over 300 GB to sync with Ethereum network), in cmd must be entered the command:
-          <ul>
-            <li>geth</li>
-          </ul>
         </p>
+
+        <ul>
+          <li>geth</li>
+        </ul>
 
         <img width={"90%"} src="/img/geth_running.png" title="Geth running" alt="Geth running"></img>
 
