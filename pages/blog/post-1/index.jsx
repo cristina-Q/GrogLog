@@ -32,7 +32,7 @@ export const meta = {
           Go Ethereum (Geth) is one of the three original implementations (along with C++ and Python) of the Ethereum protocol and one of the five available now. Read about all 5 implementations of Ethereum clients/nodes and what each has to offer on <a className={styles.links} href="https://ethereum.org/en/developers/docs/nodes-and-clients/#clients"  target="_blank" rel="noopener noreferrer">Ethereum</a> official website.
         </p>
 
-        <img src="/img/ethereum_clients.png" title="" alt="Ethereum clients/nodes"/>
+        <img width={"70%"} src="/img/ethereum_clients.png" title="Ethereum clients/nodes" alt="Ethereum clients/nodes"/>
 
         <h2>Installing Geth</h2>
 
@@ -45,9 +45,9 @@ export const meta = {
           Download the latest stable release of Go Ethereum (Geth) from the page bellow: Go to "Downloads" section  of the site.
         </p>
 
-        <img src="/img/download_geth_1.png" title="Download Geth 1" alt="Download Geth 1"/>
+        <img width={"100%"} src="/img/download_geth_1.png" title="Download Geth 1" alt="Download Geth 1"/>
 
-        <img src="/img/download_geth_2.png" title="Download Geth 2" alt="Download Geth 2"/>
+        <img width={"100%"} src="/img/download_geth_2.png" title="Download Geth 2" alt="Download Geth 2"/>
 
         <p className={styles.aligntext}>
           Official subdomain of Geth can be found at: <a className={styles.links} href="https://geth.ethereum.org/" target="_blank" rel="noopener noreferrer">https://geth.ethereum.org/</a>. For those who want to see, fork, and maybe contribute, the open source Github repository of Go-Ethereum is on this page: <a className={styles.links} href="https://github.com/ethereum/go-ethereum" target="_blank" rel="noopener noreferrer">https://github.com/ethereum/go-ethereum</a>
@@ -57,19 +57,19 @@ export const meta = {
           Once the file has been downloaded, just run it (double LMB or RMB followed by Open) since it's a .exe file.
         </p>
 
-        <img src="/img/geth_exe.png" title="Geth.exe" alt="Geth.exe"/>
+        <img width={"100%"} src="/img/geth_exe.png" title="Geth.exe" alt="Geth.exe"/>
 
         <p className={styles.aligntext}>
           The installation is pretty straight forward. Development tools are not selected by default. For an enhanced experience with Geth, it's a must to have it but is not a requirement.
         </p>
 
-        <img src="/img/development_tools.png" title="Development tools" alt="Development tools"/>
+        <img width={"60%"} src="/img/development_tools.png" title="Development tools" alt="Development tools"/>
 
         <p className={styles.aligntext}>
           Before starting Geth, let's have a look at where in the PC blockchain data and Keystore files are to be found. The path is: "C:\Users\Bob\AppData\Local\Ethereum", where "Bob" is your user in Windows 10. By default, the AppData folder is hidden in Windows and will not be visible in Explorer. To make it show up we have to instruct Windows Explorer first.
         </p>
 
-        <img src="/img/app_data.jpg" title="AppDAta" alt="AppDAta"></img>
+        <img width={"100%"} src="/img/app_data.jpg" title="AppDAta" alt="AppDAta"></img>
 
         <h2>Starting Geth</h2>
 
@@ -99,7 +99,7 @@ export const meta = {
           </ul>
         </p>
 
-        <img src="/img/geth_running.png" title="Geth running" alt="Geth running"></img>
+        <img width={"90%"} src="/img/geth_running.png" title="Geth running" alt="Geth running"></img>
 
         <p className={styles.aligntext}>
           Be aware that starting the node in Full mode will download well over 5TB (yes with a "T") of data to get in sync. The Light mode will need less than 1GB. Either way one of these commands will get the job done:
