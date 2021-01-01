@@ -12,7 +12,7 @@ export default function Header() {
           </Link>
 
           <Link href="/">
-            <a className={styles.links}>About</a>
+            <a className={styles.links}>About&nbsp;&amp;&nbsp;Contact</a>
           </Link>
         </div>
       </nav>

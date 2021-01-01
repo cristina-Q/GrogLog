@@ -7,7 +7,7 @@
 
 .nav {
   max-width: 1000px;
-  margin: 1.5rem auto;
+  margin: 0 auto;
   padding: 1rem 1rem;
 }
 
@@ -15,6 +15,7 @@
   list-style: none;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
   font-size: 1rem;
@@ -33,4 +34,7 @@
 .nav a:hover {
   outline: 5px inset rgb(255 255 255);
   outline-offset: 6px;
+}
+.ulwrapper a {
+  margin-bottom: 12px;
 }
