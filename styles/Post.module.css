@@ -3,6 +3,13 @@
   text-justify: auto;
 }
 
+@media (max-width: 846px) {
+  .aligntext {
+    text-align: left;
+    text-justify: auto;
+  }
+}
+
 .links {
   font-family: 'Exo 2';
   font-weight: 300;
@@ -17,4 +24,12 @@
   color: #0e1e25;
   font-size: 0.8em;
   padding: 0 4px;
+}
+
+.h2style {
+  margin: 1.78em auto 0;
+}
+
+.h1style {
+  margin: 1.8em auto 0;
 }

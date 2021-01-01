@@ -40,9 +40,7 @@ export default function Layout({ children, pageTitle, description }) {
           font-weight: normal;
           font-style: normal;
         }
-        a {
-          color: #000;
-        }
+
         .content {
           max-width: 1000px;
           margin: 2rem auto;
