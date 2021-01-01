@@ -18,7 +18,7 @@ export default function Layout({ children, pageTitle, description }) {
         <Footer />
       </main>
 
-      <style jsx>{`
+      <style global jsx>{`
         html,
         body {
           margin: 0;
