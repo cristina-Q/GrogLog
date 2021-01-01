@@ -14,7 +14,7 @@ export const HeadPost = ({ meta, isBlogPost }) => (
     <style jsx>
       {`
         h1 {
-          font-size: 3rem;
+          font-size: 2rem;
           font-weight: 700;
           letter-spacing: 0.88px;
           color: #333333;
