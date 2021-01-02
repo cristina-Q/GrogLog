@@ -27,7 +27,7 @@
   font-style: normal;
   font-size: 25px;
   text-decoration: none;
-  padding: 7px;
+  margin-bottom: 12px;
   color: #fff;
   background-color: #000;
 }
@@ -35,9 +35,9 @@
   outline: 5px inset rgb(255 255 255);
   outline-offset: 6px;
 }
-.ulwrapper a {
-  margin-bottom: 12px;
+.ulwrapper a:first-child {
+  padding: 7px;
 }
 .ulwrapper a:last-child {
-  padding-top: 11px;
+  padding: 11px 7px 7px;
 }
