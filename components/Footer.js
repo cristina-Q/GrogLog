@@ -2,8 +2,9 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <p>This blog is build with Next.js.</p>
+        <p> This blog is build with Next.js.</p>
         <p> Automate build process and continuous deployment are done on Netlify. </p>
+        <p> It works without Javascript enabled 🔌</p>
 
         <p>2021@GrogLog. All rights Reverved. ಠ_ಠ</p>
       </footer>
