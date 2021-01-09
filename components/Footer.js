@@ -4,8 +4,7 @@ export default function Footer() {
       <footer>
         <p> This blog is build with Next.js.</p>
         <p> Automate build process and continuous deployment are done on Netlify. </p>
-        <p> It works without Javascript enabled 🔌</p>
-
+        <p> Works without Javascript enabled 🔌</p>
         <p>2021@GrogLog. All rights Reverved. ಠ_ಠ</p>
       </footer>
 
@@ -20,12 +19,7 @@ export default function Footer() {
           font-weight: 500;
           font-style: normal;
           font-size: 1rem;
-          margin-left: 7px;
           color: #767676;
-        }
-
-        footer p:last-child() {
-          text-align: center;
         }
       `}</style>
     </>
