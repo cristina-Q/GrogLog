@@ -4,6 +4,7 @@ import styles from '../../../styles/Post.module.css';
 export const meta = {
   title: 'Get the Geth - Ethereum client node',
   description: 'Install and run Geth on Windows 10',
+  startread: `To run or not to run an Ethereum client/node and more than that on a W10 PC comes down to a personal choice and we will not get into the rabbit hole and start to: "why or why not to.." Before to start let's have a bit of a context in regard to this option. [...]`,
   date: 'Dec 21, 2020',
   readTime: 4,
   imgsrc: '/img/ethereum.png',
@@ -14,7 +15,7 @@ export const meta = {
   export default ({ children }) => {
     return (
       <BlogPost meta={meta}>{children}
-        <h1 className={styles.h1style}>Geth on Windows 10 (part 1)</h1>
+        <h1 className={styles.h1style}>Geth on Windows 10</h1>
 
         <p className={styles.aligntext}>
           This very first post of GrogLog blog will be focused solely in: "how to install Geth on a Windows 10 Machine." More from Geth with real examples in the next post.
