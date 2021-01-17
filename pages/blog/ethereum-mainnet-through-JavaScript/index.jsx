@@ -5,7 +5,7 @@ export const meta = {
   title: 'Run JavaScript Console inside Geth Ethereum node',
   description: 'Ethereum through JavaScript',
   startread: `A way to talk to the ethereum mainnet through JavaScript is having up and running the ethereum node.
-  There are out there several node/client but this article goes further with Geth.[...]`,
+  There are several node/client to choose from but this article goes further with Geth.[...]`,
   date: 'Jan 15, 2021',
   readTime: 4,
   imgsrc: '/img/jseth.png',
@@ -20,7 +20,7 @@ export const meta = {
 
         <p className={styles.aligntext}>
           A way to talk to the ethereum mainnet through JavaScript is to having up and running the ethereum node.
-          There are out there several node/client but this article goes further with Geth.
+          There are several node/client to choose from but this article goes further with Geth.
         </p>
 
         <p className={styles.aligntext}>

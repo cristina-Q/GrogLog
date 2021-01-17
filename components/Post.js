@@ -36,6 +36,12 @@ export const Post = ({ post }) => {
           article {
             margin-bottom: 80px;
           }
+
+          @media (max-width: 700px) {
+            img {
+              width: 70%;
+            }
+          }
         `}
       </style>
     </div>
