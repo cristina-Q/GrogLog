@@ -4,7 +4,7 @@ import styles from '../../../styles/Post.module.css';
 export const meta = {
   title: 'Get the Geth - Ethereum client node',
   description: 'Install and run Geth on Windows 10',
-  startread: `To run or not to run an Ethereum client/node and more than that on a W10 PC comes down to a personal choice and we will not get into the rabbit hole and start to: "why or why not to.." Before to start let's have a bit of a context in regard to this option. [...]`,
+  startread: `To run or not to run an Ethereum client/node and more than that on a W10 PC comes down to a personal choice and we will not get into the rabbit hole: "why or why not to.." Before to start let's have a bit of a context in regard to this option. [...]`,
   date: 'Dec 21, 2020',
   readTime: 4,
   imgsrc: '/img/ethereum.png',
@@ -95,7 +95,7 @@ export const meta = {
         <p className={styles.aligntext}>You can start Geth in one of three different sync modes using the --syncmode "mode" argument that determines what sort of node it is in the network.
         </p>
 
-        <p className={styles.aligntext}>
+        <p className={styles.aligntext} id="syncmodes">
           These are:
         </p>
 

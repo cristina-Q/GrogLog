@@ -18,12 +18,8 @@
 }
 
 .code {
-  background: rgba(14, 30, 37, 0.09);
-  border: 2px solid transparent;
-  border-radius: 4px;
-  color: #0e1e25;
-  font-size: 0.8em;
-  padding: 0 4px;
+  background: rgba(201, 201, 201, 0.5);
+  padding: 3px;
 }
 
 .h2style {

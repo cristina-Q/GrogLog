@@ -19,37 +19,6 @@ export default function Layout({ children, pageTitle, description }) {
         <div className="content">{children}</div>
         <Footer />
       </main>
-
-      <style global jsx>{`
-        html,
-        body {
-          margin: 0;
-          padding: 0;
-          font-family: 'Exo 2';
-          font-weight: normal;
-          font-style: normal;
-          background: #f0f0f0;
-          color: #000;
-          font-size: 1.2rem;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-          font-family: 'Exo 2';
-          font-weight: normal;
-          font-style: normal;
-        }
-
-        .content {
-          max-width: 1000px;
-          margin: 2rem auto;
-          padding: 1rem 1rem;
-        }
-      `}</style>
     </>
   );
 }

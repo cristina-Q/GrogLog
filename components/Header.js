@@ -11,7 +11,7 @@ export default function Header() {
             <a className={styles.links}>ಠ_ಠ&nbsp;&nbsp;Grog&nbsp;Log</a>
           </Link>
 
-          <Link href="/">
+          <Link href="/about">
             <a className={styles.links}>About&nbsp;&amp;&nbsp;Contact</a>
           </Link>
         </div>
