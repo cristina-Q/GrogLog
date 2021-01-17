@@ -19,7 +19,7 @@ export const meta = {
         <h1 className={styles.h1style}>Ethereum through JavaScript</h1>
 
         <p className={styles.aligntext}>
-          A way to talk to the ethereum mainnet through JavaScript is to having up and running the ethereum node.
+          A way to talk with ethereum mainnet through JavaScript is to having up and running the ethereum node.
           There are several node/client to choose from but this article goes further with Geth.
         </p>
 
@@ -27,14 +27,14 @@ export const meta = {
         If you don't have yet an eth node up and running you are invited to visit another part of this blog where the process of <a className={styles.links} href="https://groglog.net/blog/get-the-geth-ethereum-client-node" target="_blank" rel="noopener noreferrer"> how to get the Geth </a> is described for a Windows mashine but you may adapt for other operating systems. Remember that you can always refer to the <a className={styles.links} href="https://geth.ethereum.org/docs/install-and-build/installing-geth" target="_blank" rel="noopener noreferrer">official docs</a> for more information about installing Geth.
         </p>
         <br></br>
-        <p>So these being said...let's fire up the Geth!</p>
+        <p>That being said...let's fire up the Geth!</p>
         <p>Open your command line interface and type:<br></br>
         <pre>
           <code className={styles.code}>geth --syncmode "light"</code>
         </pre> or your syncmode of choice between the 3 modes that we already discussed <a className={styles.links} href="https://groglog.net/blog/get-the-geth-ethereum-client-node#syncmodes" target="_blank" rel="noopener noreferrer"> here.</a></p>
 
         <p>If you type just "geth" it will start to download in the 'fast mode' which is also the default mode.
-          If then you want to stop this sync and go with 'light' or 'full' version just stop syncing with ctrl+c (recommended).<br></br>
+          To stop this sync mode ('fast') and go with 'light' or 'full' version just stop syncing with ctrl+c (recommended).<br></br>
           Open once again the cmd and type <code className={styles.code}>geth --syncmode "light"</code> or <code className={styles.code}>geth --syncmode "full"</code> (do not forget the 'full' mode takes more that 5TB)</p>
         <p>Geth will make different folders for different syncmodes where the chaindata will be downloaded and updated. You cand find them "C:\Users\your-username\ AppData\Local\Ethereum\geth". </p>
 
