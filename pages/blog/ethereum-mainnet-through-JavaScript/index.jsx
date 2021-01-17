@@ -33,7 +33,7 @@ export const meta = {
           <code className={styles.code}>geth --syncmode "light"</code>
         </pre> or your syncmode of choice between the 3 modes that we already discussed <a className={styles.links} href="https://groglog.net/blog/get-the-geth-ethereum-client-node#syncmodes" target="_blank" rel="noopener noreferrer"> here.</a></p>
 
-        <p>If you type just "geth" it will start to download in the 'fast mode' witch is also the default mode.
+        <p>If you type just "geth" it will start to download in the 'fast mode' which is also the default mode.
           If then you want to stop this sync and go with 'light' or 'full' version just stop syncing with ctrl+c (recommended).<br></br>
           Open once again the cmd and type <code className={styles.code}>geth --syncmode "light"</code> or <code className={styles.code}>geth --syncmode "full"</code> (do not forget the 'full' mode takes more that 5TB)</p>
         <p>Geth will make different folders for different syncmodes where the chaindata will be downloaded and updated. You cand find them "C:\Users\your-username\ AppData\Local\Ethereum\geth". </p>
